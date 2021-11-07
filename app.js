@@ -23,7 +23,5 @@ const connectDB = async () => {
 connectDB()
 
 
-
-
-const cubeRouter = require(__dirname+'/routes/cube')
-app.use('/cube',cubeRouter)
+const cubeRouter = require(__dirname+'/routes/cubes')
+app.use('/cubes',cubeRouter)
