@@ -25,3 +25,9 @@ app.use(express.json())
 
 const cubeRouter = require(__dirname+'/routes/cubes')
 app.use('/cubes',cubeRouter)
+
+
+app.use('/docs',express.static('./public/docs'))
+app.get('/docs',(req,res)=>{
+  res.sendFile(__dirname+'/public/docs/index.html')
+})

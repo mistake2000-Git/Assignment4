@@ -196,7 +196,6 @@ module.exports = router
  * @apiError (404) TheProductExist The new product is exist!
  * @apiErrorExample Error-Response:
  *     The product name is exist!
- * @apiBody {string} [id] The id of the new product
  * @apiBody {string} [category] The category of the new product
  * @apiBody {string} [name] The name of the new product
  * @apiBody {int} [quantity] The quantity of the new product
