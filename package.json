@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js"
+    "start": "nodemon app.js",
+    "genAPIDoc": "apidoc -i routes -o Public/docs/"
   },
   "repository": {
     "type": "git",
@@ -18,11 +19,13 @@
   },
   "homepage": "https://github.com/mistake2000-Git/Assignment4#readme",
   "dependencies": {
-    "apidoc": "^0.50.1",
     "express": "^4.17.1",
     "mongodb": "^4.1.4",
     "mongoose": "^6.0.12",
     "nodemon": "^2.0.14",
     "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "apidoc": "^0.50.0"
   }
 }
